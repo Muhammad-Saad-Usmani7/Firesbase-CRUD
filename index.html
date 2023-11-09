@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD FIREBASE</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database-compat.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body>
+
+    <div class="bg-slate-500  flex justify-center items-center w-full h-screen" id="one">
+
+        <div class="bg-slate-300  block w-96 rounded font-serif" id="two">
+
+            <div class="flex justify-center p-3 " id="three">
+                <h1 id="four">FIREBASE CRUD OPERTAION!</h1>
+            </div><hr class="w-64 ml-16 border-zinc-700">
+
+            <form class="" id="five">
+                <div class="p-7">
+                    <div class="">
+                        <label for="Roll-no" class="block ">Roll-no:
+                        <input type="text" id="Roll-no" class="ml-[65px] px-2">
+                        </label>
+
+                        <label for="Name" class="block my-2">Name:
+                        <input type="text" id="Name" class="ml-[76px] px-2">
+                        </label>
+
+                        <label for="Department" class="block my-2">Department:
+                        <input type="text" id="Department" class="ml-[32.5px] px-2">
+                        </label>
+
+                        <label for="Batch" class="block ">Batch:
+                        <input type="text" id="Batch" class="ml-[78px] px-2">
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between px-1 mb-1">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-full" id="btn1" >Create</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-full" id="btn2">Read</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-full" id="btn3">Update</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-full" id="btn4" >Delete</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+  
+    <script src="./firebaseconfig.js"></script>
+    <script src="./app2.js"></script>
+    
+</body>
+</html>
